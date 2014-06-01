@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PokerGame.Windows</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- PokerGame.Windows references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="/js/poker.js"></script>
+</head>
+<body>
+    <img src="" width=381 height=81>
+    <hr />
+    <form name="form1">
+        <table>
+            <tr>
+                <td>
+                    <img border=0 src="" height=136 width=106>
+                </td>
+                <td>
+                    <img border=0 src="" height=136 width=106>
+                </td>
+                <td>
+                    <img border=0 src="" height=136 width=106>
+                </td>
+                <td>
+                    <img border=0 src="" height=136 width=106>
+                </td>
+                <td>
+                    <img border=0 src="" height=136 width=106>
+                    <td>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="#" onclick="Hold(1);">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+                <td>
+                    <a href="#" onclick="Hold(2);">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+                <td>
+                    <a href="#" onclick="Hold(3);">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+                <td>
+                    <a href="#" onclick="Hold(4);">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+                <td>
+                    <a href="#" onclick="Hold(5);">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <b>Total<br />Score:</b>
+                    <input type="text" size=6 name="total" value="100" />
+                </td>
+                <td colspan=2><b>Current<br />Hand:</b>
+                <input type="text" size=20 name="message" value="press DEAL to begin" />
+                </td>
+                <td>
+                    <a href="#" onclick="DealDraw();">
+                        <img border=0 src="" height=50 width=106>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

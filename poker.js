@@ -34,13 +34,13 @@ function Deal()
     {
         hand[i] = deck[i];
         document.images[i].src = hand[i].fname();
-        document.images[i + 5].src = "";
+        document.images[i + 5].src = "hold.gif";
         held[i] = false;
     }
     dealt = true;
     score = score - 1; //deduct one for bet amount
     document.form1.total.value = score;
-    document.images[11].src = "";
+    document.images[11].src = "draw.gif";
     Addscore();
 }
 //hold or discard a card
@@ -51,12 +51,12 @@ function Hold(num)
     if(!held[num])
     {
         held[num] = true;
-        document.images[5 + num].src = "";
+        document.images[5 + num].src = "hold2.gif";
     }
     else
     {
         held[num] = false;
-        document.images[5 + num].src = "";
+        document.images[5 + num].src = "hold.gif";
     }
 }
 //Draw new cards
@@ -72,14 +72,14 @@ function Draw()
         }
     }
     dealt = false;
-    document.images[11].src = "";
+    document.images[11].src = "deal.gif";
     score += Addscore();
     document.form1.total.value = score;
 }
 //Make a filename for an image, given card object
 function fname()
 {
-    return this.num + this.suit + "";
+    return this.num + this.suit + ".gif";
 }
 //constructor for card objects
 function Card(num, suit)
